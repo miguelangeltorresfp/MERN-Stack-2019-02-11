@@ -24,9 +24,9 @@ const TextFieldGroup = ({
         name={name}
         value={value}
         onChange={onChange}
-        autoComplete={disabled}
+        disabled={disabled}
       />
-      {info && <samll className="form-text text-muted">{info}</samll>}
+      {info && <small className="form-text text-muted">{info}</small>}
       {error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
