@@ -67,6 +67,7 @@ class Login extends Component {
                   value={this.state.email}
                   onChange={this.onChange}
                   error={errors.email}
+                  autocomplete="email"
                 />
                 <TextFieldGroup
                   placeholder="Password"
@@ -75,6 +76,7 @@ class Login extends Component {
                   value={this.state.password}
                   onChange={this.onChange}
                   error={errors.password}
+                  autocomplete="current-password"
                 />
                 <input type="submit" className="btn btn-info btn-block mt-4" />
               </form>
